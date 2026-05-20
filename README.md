@@ -1,5 +1,7 @@
 # My-UCSC-C-CPP-Programming-For-everyone-codes
-All my C/C++ Code I made to fulfill this course.
+C and C++ For everyone online course, from University of California Santa Cruz
+All my C/C++ Project and Homework Codes I made to fulfill this course.
+It covers my journey from basic C programming to advance OOP using C++
 
 ⚠️ DISCLAIMER AND ACADEMIC INTEGRITY
 
