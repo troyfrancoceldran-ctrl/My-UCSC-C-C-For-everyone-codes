@@ -1,0 +1,29 @@
+# HexNet: High-Performance Graph Topology & Pathfinding Engine in Modern C++
+
+Developed as a high-performance spatial network simulator in modern C++11, HexNet abstracts a non-orthogonal hexagonal coordinate system into an undirected graph to evaluate boundary-to-boundary path connectivity. Engineered using memory-efficient STL structures, the system maps out a 6-degree node adjacency network while handling edge-case boundary mutations (corners and sides). The project utilizes strict object-oriented paradigms, adheres to the Google C++ Style Guide, and generates clean system documentation via Doxygen.
+
+While visually rendered as a strategic game simulation, the underlying graph-theory logic directly scales to complex engineering domains — including Electrical Engineering topology (power grid fault-tolerance modeling, VLSI semiconductor trace routing) and Robotics path planning (SLAM spatial discretization, kinematic map configurations, and autonomous swarm spatial tracking).
+
+An AI opponent via Monte Carlo Simulation is additionally implemented, leveraging randomized game-tree exploration to determine statistically optimal moves against a human player. Win detection runs in near O(1) amortized time using a Union-Find (Disjoint Set) data structure with path compression and union by size — a deliberate design choice that scales efficiently under the thousands of simulations Monte Carlo requires per move.
+
+This project serves as the final deliverable for the *Coding for Everyone: C and C++* Specialization by Ira Pohl on Coursera. Basically just a Hex Game in C++ that uses various DSA techniques — just made it sound techy. 😄
+
+---
+
+## Features
+- Colored ANSI terminal rendering with red/blue bordered 11×11 board
+- Union-Find (DSU) win detection — O(α(N)) amortized per check
+- Full input validation with stream error recovery
+- Monte Carlo AI opponent (HW5)
+- Google C++ Style Guide compliant with full Doxygen documentation
+
+## Build & Run
+```bash
+g++ HexGame_prototype1.cpp -o HexGame && ./HexGame
+```
+
+## Tech Stack
+- Language: C++11
+- Data Structures: Union-Find (Disjoint Set), 2D Vector Board
+- Algorithms: Path Compression, Union by Size, Monte Carlo Simulation
+- Tools: Doxygen, Google C++ Style Guide, KiCAD (related UAV project)
